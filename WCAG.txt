@@ -4,47 +4,66 @@ Web Content Accessibility Guidelines (WCAG)
     accessibility guidelines. Provide examples of at least two semantic HTML 
     elements and clarify how they enhance accessibility for users with disabilities.
 
-    Förklara betydelsen av semantiska element i webbutveckling enligt riktlinjer
-    för tillgänglighet. Ge exempel på minst två semantiska HTML-element och förtydliga
-    hur de förbättrar tillgängligheten för användare med funktionshinder.
-
 Semantiska element är element som beskriver vad det är för element och innehållet i
 elementet är lätt att förutse. Det finns två element, <div> och <span>, vars namn
-inte beskriver innehållet och helst om det går ska man använda andra element.
-Exempel på semantiska element som tydligt definierar sitt innehåll är <form> och 
+inte beskriver innehållet och helst ska man använda andra element i första hand (för att öka tillgängligheten).
+
+Exempel på ett semantiska element är <header> som används för att definiera en webbsidas sidhuvud
+och vanligtvis innehåller hemsidans logotyp och navigering. <header>-elementet kan vara till 
+nytta genom att ge en tydlig identifiering av sidhuvudet och hjälpa till att navigera till olika delar av webbsidan.
+
+Ett annat exempel är <nav>-elementet, som används för att definiera en navigationsmeny på en webbsida.
+Genom att använda <nav>-elementet kan användare med funktionshinder enkelt hitta och navigera till olika 
+delar av webbplatsen, vilket förbättrar tillgängligheten.
 
 2.  Describe the significance of color contrast in web design 
     concerning accessibility. How does adhering to color contrast guidelines
     benefit users with visual impairments, and what are the recommended
     contrast ratios as per WCAG standards?
 
-    Beskriv färgkontrastens betydelse i webbdesign avseende tillgänglighet.
-    Hur gynnar det användare med synnedsättning att följa riktlinjerna för
-    färgkontrast, och vilka är de rekommenderade kontrastförhållandena
-    enligt WCAG-standarder?
+Att ha en tillräcklig färgkontrast är väldigt viktigt för att en webbdesign ska vara tillgänglig, särskilt för
+användare med nedsatt syn. För användare med synnedsättning kan färgkontrast göra det svårt att urskilja text 
+från bakgrunden eller att läsa innehållet på webbsidan. Genom att följa de rekommenderade riktlinjerna för
+färgkontrast kan man säkerställa att en webbsidas text och andra element är tydligt synliga och läsbara för alla användare.
+
+Enligt WCAG rekommenderas ett kontrastförhållande på minst 4,5 för normal text och
+3 för större text (till exempel rubriker). Detta innebär att texten ska vara minst 4,5 gånger ljusare än
+bakgrunden för att vara tillgänglig. Däremot rekommenderas ett kontrastförhållande på minst 7 för normal
+ text och 4,5 för större text för användare med större synnedsättning.
 
 3.  Discuss the role of alternative text (alt text) for images in
     accordance with accessibility guidelines. Why is it crucial to include
     descriptive alt text, and how does this contribute to making web content
     more accessible? Provide examples to illustrate your explanation.
 
-    Diskutera rollen av alternativ text (alt text) för bilder i enlighet med
-    riktlinjer för tillgänglighet. Varför är det avgörande att inkludera
-    beskrivande alt-text, och hur bidrar detta till att göra webbinnehåll
-    mer tillgängligt? Ge exempel för att illustrera din förklaring.
+Alt-text är en beskrivande text attribut för <img>. Det är viktigt att inkludera beskrivande alt-text
+för bilder eftersom det ger användare med funktionshinder, särskilt de med synnedsättning,
+möjlighet att förstå innehållet i bilder som de annars inte skulle kunna se. Genom att inkludera
+beskrivande alt-text kan skärmläsare och andra hjälpmedel för funktionshindrade användare
+läsa upp alt-texten och beskriva bilden för användaren. Detta gör det möjligt för användare med synnedsättning
+att få en liknande upplevelse som användare utan funktionshinder och förstå vad bilden föreställer.
+
+Ett exempel kan vara en webbsida som säljer kläder och har bilder på kläderna som säljs.
+Genom att ha en alt-text för varje klädesplagg, till exempel "Ljusblå bomullsskjorta",
+kan användare med synnedsättning få en förståelse av produkten och göra ett informerat val vid köp.
+
 
 4.  Explain the purpose of landmarks in creating accessible web content.
     How do landmarks aid in navigation for users of assistive technologies,
     and can you provide examples of commonly used landmark elements in HTML?
 
-    Förklara syftet med landmärken för att skapa tillgängligt webbinnehåll.
-    Hur hjälper landmärken till navigering för användare av hjälpmedel,
-    och kan du ge exempel på vanliga landmärken i HTML?
+Landmärken fungerar som markörer som identifierar och definierar olika delar av en webbsidas struktur.
+För användare av hjälpmedel, t.ex. skärmläsare eller tangentbordsnavigering, är landmärken viktiga.
+Genom att använda landmärken kan användare snabbt hoppa till specifika delar av webbsidan,
+vilket sparar tid och underlättar för användare och ger en effektivare navigeringsupplevelse.
+
+Några exempel på landmärken är <header>, <nav>, <main>, <section>, <footer>.
 
 5.  Describe the significance of proper form labeling.
     Why is it important to label form elements, and what strategies
     can developers implement to ensure effective labeling for improved accessibility?
 
-    Beskriv betydelsen av korrekt formulärmärkning. Varför är det viktigt att märka
-    formulär-element och vilka strategier kan utvecklare implementera för att
-    säkerställa effektiv märkning för förbättrad tillgänglighet?
+Det är viktigt att använda <label> till formulär-element av flera skäl. För det första underlättar det
+för användare att förstå vilken typ av information som förväntas i varje fält.
+Till exempel kan en tydlig labeö för ett textinmatningsfält ange att det förväntas
+en e-postadress eller ett namn, vilket minskar förvirring och felinmatningar.
