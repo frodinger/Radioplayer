@@ -5,31 +5,33 @@ Web Content Accessibility Guidelines (WCAG)
     elements and clarify how they enhance accessibility for users with disabilities.
 
 Semantiska element är element som beskriver vad det är för element och innehållet i
-elementet är lätt att förutse. Det finns två element, <div> och <span>, vars namn
-inte beskriver innehållet och helst ska man använda andra element i första hand (för att öka tillgängligheten).
+elementet är lätt att förutse. Det finns två element, <div> och <span>, vars namn inte
+beskriver innehållet och helst ska man använda andra element i första hand (för att öka tillgängligheten).
 
-Exempel på ett semantiska element är <header> som används för att definiera en webbsidas sidhuvud
-och vanligtvis innehåller hemsidans logotyp och navigering. <header>-elementet kan vara till 
-nytta genom att ge en tydlig identifiering av sidhuvudet och hjälpa till att navigera till olika delar av webbsidan.
+Exempel på ett semantiska element är <header> som används för att definiera en webbsidas
+sidhuvud och vanligtvis innehåller hemsidans logotyp och navigering. <header>-elementet
+kan vara till nytta genom att ge en tydlig identifiering av sidhuvudet och hjälpa till
+att navigera till olika delar av webbsidan.
 
-Ett annat exempel är <nav>-elementet, som används för att definiera en navigationsmeny på en webbsida.
-Genom att använda <nav>-elementet kan användare med funktionshinder enkelt hitta och navigera till olika 
-delar av webbplatsen, vilket förbättrar tillgängligheten.
+Ett annat exempel är <nav>-elementet, som används för att definiera en navigationsmeny
+på en webbsida. Genom att använda <nav>-elementet kan användare med funktionshinder
+enkelt hitta och navigera till olika delar av webbplatsen, vilket förbättrar tillgängligheten.
 
 2.  Describe the significance of color contrast in web design 
     concerning accessibility. How does adhering to color contrast guidelines
     benefit users with visual impairments, and what are the recommended
     contrast ratios as per WCAG standards?
 
-Att ha en tillräcklig färgkontrast är väldigt viktigt för att en webbdesign ska vara tillgänglig, särskilt för
-användare med nedsatt syn. För användare med synnedsättning kan färgkontrast göra det svårt att urskilja text 
-från bakgrunden eller att läsa innehållet på webbsidan. Genom att följa de rekommenderade riktlinjerna för
-färgkontrast kan man säkerställa att en webbsidas text och andra element är tydligt synliga och läsbara för alla användare.
+Att ha en tillräcklig färgkontrast är väldigt viktigt för att en webbdesign ska vara tillgänglig,
+särskilt för användare med nedsatt syn. För användare med synnedsättning kan färgkontrast göra
+det svårt att urskilja text från bakgrunden eller att läsa innehållet på webbsidan. Genom att
+följa de rekommenderade riktlinjerna för färgkontrast kan man säkerställa att en webbsidas
+text och andra element är tydligt synliga och läsbara för alla användare.
 
-Enligt WCAG rekommenderas ett kontrastförhållande på minst 4,5 för normal text och
-3 för större text (till exempel rubriker). Detta innebär att texten ska vara minst 4,5 gånger ljusare än
-bakgrunden för att vara tillgänglig. Däremot rekommenderas ett kontrastförhållande på minst 7 för normal
- text och 4,5 för större text för användare med större synnedsättning.
+Enligt WCAG rekommenderas ett kontrastförhållande på minst 4,5 för normal text och 3 för större
+text (till exempel rubriker). Detta innebär att texten ska vara minst 4,5 gånger ljusare än
+bakgrunden för att vara tillgänglig. Däremot rekommenderas ett kontrastförhållande på minst 7 för
+normal text och 4,5 för större text för användare med större synnedsättning.
 
 3.  Discuss the role of alternative text (alt text) for images in
     accordance with accessibility guidelines. Why is it crucial to include
@@ -65,5 +67,18 @@ Några exempel på landmärken är <header>, <nav>, <main>, <section>, <footer>.
 
 Det är viktigt att använda <label> till formulär-element av flera skäl. För det första underlättar det
 för användare att förstå vilken typ av information som förväntas i varje fält.
-Till exempel kan en tydlig labeö för ett textinmatningsfält ange att det förväntas
+Till exempel kan en tydlig label för ett textinmatningsfält ange att det förväntas
 en e-postadress eller ett namn, vilket minskar förvirring och felinmatningar.
+
+Exempel på strategier som utvecklare kan försöka att implementera:
+
+1. Använd <label>-elementet: Koppla varje formulär-element till dess etikett med
+hjälp av <label>-elementet. Detta gör det möjligt för användare att klicka på
+etiketten för att markera det associerade formulär-elementet.
+
+2. Använd aria-label för fält utan synlig label: Om <label>-elementet inte kan användas,
+kan aria-label användas för att ge formulär-elementet en beskrivande etikett som skärmläsare kan läsa upp.
+
+3. Ersätt inte label med placeholder: Placeholder kan ge en visuell ledtråd om vad som förväntas
+i ett formulär-fält, men det bör inte ersätta en tydlig etikett. Användare med funktionshinder
+kan ha svårt att se eller komma ihåg placeholder-texten.
