@@ -72,13 +72,11 @@ en e-postadress eller ett namn, vilket minskar förvirring och felinmatningar.
 
 Exempel på strategier som utvecklare kan försöka att implementera:
 
-1. Använd <label>-elementet: Koppla varje formulär-element till dess etikett med
-hjälp av <label>-elementet. Detta gör det möjligt för användare att klicka på
-etiketten för att markera det associerade formulär-elementet.
+1. Använd <label>: Koppla varje formulär-element till dess etikett 
+genom <label>. Detta gör det möjligt för användare att klicka på
+label för att markera det associerade formulär-elementet och för skärmläsare
+att läsa upp elementets label.
 
-2. Använd aria-label för fält utan synlig label: Om <label>-elementet inte kan användas,
-kan aria-label användas för att ge formulär-elementet en beskrivande etikett som skärmläsare kan läsa upp.
-
-3. Ersätt inte label med placeholder: Placeholder kan ge en visuell ledtråd om vad som förväntas
-i ett formulär-fält, men det bör inte ersätta en tydlig etikett. Användare med funktionshinder
-kan ha svårt att se eller komma ihåg placeholder-texten.
+2. Använd aria-label för fält utan synlig label: Om <label>-elementet inte kan
+användas, kan aria-label användas för att ge formulär-elementet en beskrivande
+etikett som skärmläsare kan läsa upp.
